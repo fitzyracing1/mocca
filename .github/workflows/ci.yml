@@ -14,4 +14,4 @@ jobs:
           distribution: temurin
           java-version: '11'
       - name: Build
-        run: chmod +x gradlew && ./gradlew assemble testClasses --no-daemon -x signArchives -x signMavenJavaPublication
+        run: chmod +x gradlew && ./gradlew compileJava compileTestJava --no-daemon
